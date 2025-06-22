@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livros | Livraria On-line</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .text-truncate-3 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-app-primary m-3 shadow rounded"
+      style="background-color: #5e3c2c"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            style="height: 25px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+            />
+          </svg>
+          Livraria On-line
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Livros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contatos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main class="container mt-5 bg-light p-4 shadow rounded">
+      <div class="row mb-4">
+        <div class="col-12">
+          <h2 class="text-center">📚 Todos os Livros</h2>
+        </div>
+      </div>
+
+      <!-- Barra de Pesquisa -->
+      <div class="row mb-4">
+        <div class="col-md-8 mx-auto">
+          <form class="search-form d-flex">
+            <input
+              type="search"
+              class="form-control me-2"
+              placeholder="Pesquisar por título, autor ou categoria..."
+              name="search"
+            />
+            <button class="btn btn-outline-secondary" type="submit" disabled>
+              🔍
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Lista de Livros -->
+      <div class="row g-4">
+        <!-- CARD 1 – Torto Arado -->
+        <div class="col-md-4">
+          <a href="livro1.html" class="card-link">
+            <div class="card shadow-sm">
+              <img
+                src="/images/1.jpg"
+                class="card-img-top"
+                alt="Capa do livro Torto Arado"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Torto Arado</h5>
+                <p class="card-text text-truncate-3">
+                  Romance premiado que acompanha duas irmãs no sertão baiano,
+                  explorando temas como espiritualidade, ancestralidade e
+                  desigualdade.
+                </p>
+                <button class="btn btn-link p-0 mt-2">Ver mais</button>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- CARD 2 – O Auto da Compadecida -->
+        <div class="col-md-4">
+          <a href="livro2.html" class="card-link">
+            <div class="card shadow-sm">
+              <img
+                src="/images/2.webp"
+                class="card-img-top"
+                alt="Capa do livro O Auto da Compadecida"
+              />
+              <div class="card-body">
+                <h5 class="card-title">O Auto da Compadecida</h5>
+                <p class="card-text text-truncate-3">
+                  Comédia teatral de Ariano Suassuna que retrata o sertão
+                  nordestino com humor, crítica social e elementos do
+                  catolicismo popular.
+                </p>
+                <button class="btn btn-link p-0 mt-2">Ver mais</button>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- CARD 3 – Grande Sertão: Veredas -->
+        <div class="col-md-4">
+          <a href="livro3.html" class="card-link">
+            <div class="card shadow-sm">
+              <img
+                src="/images/3.jpeg"
+                class="card-img-top"
+                alt="Capa do livro Grande Sertão: Veredas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Grande Sertão: Veredas</h5>
+                <p class="card-text text-truncate-3">
+                  Obra-prima de Guimarães Rosa que narra a jornada filosófica de
+                  Riobaldo pelo sertão, refletindo sobre o bem, o mal e o
+                  destino.
+                </p>
+                <button class="btn btn-link p-0 mt-2">Ver mais</button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white mt-5" style="background-color: #5e3c2c">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5>📚 Livraria Encanto</h5>
+            <p class="small">
+              Um espaço para quem ama histórias, descobertas e boas leituras.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Links Rápidos</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-white text-decoration-none"
+                  >Início</a
+                >
+              </li>
+              <li>
+                <a href="livros.html" class="text-white text-decoration-none"
+                  >Livros</a
+                >
+              </li>
+              <li>
+                <a href="contato.html" class="text-white text-decoration-none"
+                  >Contatos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Fale Conosco</h5>
+            <p class="small mb-1">📞 (11) 99999-9999</p>
+            <p class="small mb-1">📧 contato@encantolivros.com</p>
+            <p class="small">📍 Rua das Letras, 123 - São Paulo, SP</p>
+          </div>
+        </div>
+        <hr class="border-light" />
+        <div class="text-center small">
+          © 2025 Livraria Encanto de Palavras — Todos os direitos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const searchInput = document.querySelector('input[name="search"]');
+        const cards = document.querySelectorAll(".card");
+
+        searchInput.addEventListener("input", function () {
+          const searchTerm = this.value.toLowerCase();
+
+          cards.forEach((card) => {
+            const title = card
+              .querySelector(".card-title")
+              .textContent.toLowerCase();
+            const isMatch = title.includes(searchTerm);
+            card.closest(".col-md-4").style.display = isMatch
+              ? "block"
+              : "none";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

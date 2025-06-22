@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap");
+
+body {
+  font-family: "Cormorant Garamond", serif;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.text-truncate-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* número de linhas */
+  -webkit-box-orient: vertical;
+}
+
+.bg-app-primary {
+  background-color: #5e3c2c !important; /* Exemplo de cor primária */
+}
+
+body {
+  background-image: url('/images/background.jpeg');
+  background-size: cover;       /* scales the image to cover the entire element */
+  background-position: center;  /* centers the image */
+  background-repeat: no-repeat; /* prevents repeating */
+}
+
+nav, footer {
+  opacity: 0.94;
+}
