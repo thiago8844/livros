@@ -20,7 +20,7 @@ body {
 }
 
 body {
-  background-image: url('/images/background.jpeg');
+  background-image: url('images/background.jpeg');
   background-size: cover;       /* scales the image to cover the entire element */
   background-position: center;  /* centers the image */
   background-repeat: no-repeat; /* prevents repeating */
